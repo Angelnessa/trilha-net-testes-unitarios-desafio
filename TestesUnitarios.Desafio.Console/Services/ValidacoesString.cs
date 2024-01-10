@@ -1,6 +1,9 @@
+
 namespace TestesUnitarios.Desafio.Console.Services
 {
     public class ValidacoesString
+
+        
     {
         public int RetornarQuantidadeCaracteres(string texto)
         {
@@ -19,5 +22,16 @@ namespace TestesUnitarios.Desafio.Console.Services
             var termina = texto.EndsWith(textoProcurado);
             return termina;
         }
+
+        public void ContemAPalavra(string texto, string textoProcurado)
+        {
+            throw new NotImplementedException();
+        }
+
+         public bool PalavraQualquer(string texto, string palavra)
+        {
+            return texto.Contains(palavra);
+        }
+        
     }
 }

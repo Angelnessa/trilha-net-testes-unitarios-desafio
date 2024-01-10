@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace TestesUnitarios.Desafio.Console.Services
 {
     public class ValidacoesLista
@@ -28,6 +31,26 @@ namespace TestesUnitarios.Desafio.Console.Services
         public int RetornarMenorNumeroLista(List<int> lista)
         {
             return lista.Min();
+        }
+
+        public bool MultiplicarNumerosLista(List<int> lista, List<int> resultadoEsperado)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<int> MultiplicarNumerosLista(List<int> lista, int v1, int v2, int v3, int v4)
+        {
+            List<int> resultado = new List<int>();
+            foreach (var numero in lista)
+            {
+                resultado.Add(numero * 2);
+            }
+            return resultado;
+        }
+
+        public bool NaoDeveConter(List<int> lista, int numeroParaProcurar)
+        {
+            return !lista.Contains(numeroParaProcurar);
         }
     }
 }
